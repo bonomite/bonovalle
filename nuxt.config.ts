@@ -1,6 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 //const theme = 'bonovalle'
-const theme = 'drcantamessa/viva-light/'
+//const theme = 'drcantamessa/viva-light/'
 export default defineNuxtConfig({
     build: {
         transpile: [
