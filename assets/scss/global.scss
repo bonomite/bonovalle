@@ -1,0 +1,46 @@
+$contentWidth: 1440px;
+$mobileBreakpoint: '<lg';
+
+$primaryColor: var(--primary-color);
+//@import './gap.scss';
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    //overflow: hidden;
+    .content {
+        width: 100%;
+        max-width: $contentWidth;
+        padding: 2.5rem;
+        @include media('<lg') {
+            padding: 2rem 1.5rem;
+        }
+        @include media('<md') {
+            padding: 1.5rem 1rem;
+        }
+    }
+}
+
+a {
+    color: var(--primary-color);
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+@keyframes p-progress-spinner-color {
+    100%,
+    0% {
+        stroke: var(--primary-color);
+    }
+    50% {
+        stroke: var(--primary-color-lighter);
+    }
+}
+
+.shadow {
+    text-shadow: 2px 2px 4px #000000;
+}
