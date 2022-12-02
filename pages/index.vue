@@ -16,7 +16,7 @@ onMounted(() => {
 })
 
 const onClick = async () => {
-  console.log('selectedUser = ', selectedUser.value)
+  //console.log('selectedUser = ', selectedUser.value)
   if (tl.paused()) {
     tl.resume()
   } else {
