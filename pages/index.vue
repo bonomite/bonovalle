@@ -1,21 +1,17 @@
 <script setup>
-const props = defineProps({
-  //   propVar: {
-  //     type: Boolean,
-  //     default: false,
-  //   },
-})
-
-//const emit = defineEmits(["change", "click"]);
-
-// lifecycle hooks
-onMounted(() => {})
+import { useCurrentData } from '~/composables/states'
+const dataState = useCurrentData()
 </script>
 
 <template>
   <div>
     <div class="home">
-      home page
+      Home
+      <div v-if="dataState" v-for="row in dataState">
+        <p>id: {{ row.id }}</p>
+        <p>name: {{ row.name }}</p>
+        <p>powered: {{ row.powered }}</p>
+      </div>
       <Button label="Prime Button" />
     </div>
   </div>

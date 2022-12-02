@@ -2,6 +2,7 @@
 //const theme = 'bonovalle'
 //const theme = 'drcantamessa/viva-light/'
 export default defineNuxtConfig({
+    modules: ['@nuxtjs/supabase'],
     build: {
         transpile: [
             'primevue'
@@ -26,6 +27,8 @@ export default defineNuxtConfig({
     runtimeConfig: {
         public: {
             //BASE_URL: process.env['BASE_URL'],
+            SUPABASE_URL: process.env['SUPABASE_URL'],
+            SUPABASE_key: process.env['SUPABASE_KEY'],
         }
     },
 })

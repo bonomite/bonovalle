@@ -8,12 +8,13 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
+    "@nuxtjs/supabase": "^0.3.0",
     "nuxt": "3.0.0"
   },
   "dependencies": {
     "primeicons": "^6.0.1",
     "primevue": "^3.20.0",
-    "sass": "^1.56.1",
-    "primevue-designer": "github:bonomite/design-system"
+    "primevue-designer": "github:bonomite/design-system",
+    "sass": "^1.56.1"
   }
 }
