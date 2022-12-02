@@ -14,7 +14,7 @@ onMounted(() => {
   btn = btnHolderRef.value.querySelector('.p-button')
   tl.to(btn, { x: 100, yoyo: true, repeat: -1 })
 })
-
+// the click event for the submit button
 const onClick = async () => {
   //console.log('selectedUser = ', selectedUser.value)
   if (tl.paused()) {
@@ -50,7 +50,7 @@ const isBtnDisabled = computed(() => {
         <p>name: {{ row.name }}</p>
         <p>powered: {{ row.powered }}</p>
       </div>
-      <div class="p-4">
+      <div class="form p-4">
         <Dropdown
           v-model="selectedUser"
           :options="dataState"
@@ -75,5 +75,8 @@ const isBtnDisabled = computed(() => {
 
 <style lang="scss">
 .home {
+  .form {
+    background-color: var(--primary-color-lighter);
+  }
 }
 </style>
