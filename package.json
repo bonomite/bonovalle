@@ -12,6 +12,7 @@
     "nuxt": "3.0.0"
   },
   "dependencies": {
+    "gsap": "^3.11.3",
     "primeicons": "^6.0.1",
     "primevue": "^3.20.0",
     "primevue-designer": "github:bonomite/design-system",
