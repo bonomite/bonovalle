@@ -14,9 +14,9 @@ onMounted(() => {
   btn = btnHolderRef.value.querySelector('.p-button')
   tl.to(btn, { x: 100, yoyo: true, repeat: -1 })
 })
-
+// the click event for the submit button
 const onClick = async () => {
-  console.log('selectedUser = ', selectedUser.value)
+  //console.log('selectedUser = ', selectedUser.value)
   if (tl.paused()) {
     tl.resume()
   } else {
