@@ -37,7 +37,7 @@ export default defineNuxtConfig({
             preprocessorOptions: {
                 scss: {
                     // besure to mirror theses imports in the vitest.config.ts
-                    additionalData: `@charset "UTF-8"; @use 'sass:map'; @use 'sass:math'; @use 'sass:string'; @import url('https://fonts.googleapis.com/css2?family=Exo+2&family=Kdam+Thmor+Pro&display=swap'); @import 'primevue-designer/src/assets/themes/${theme}/breakpoints.scss'; @import 'primevue-designer/src/assets/custom/include-media.scss'; @import 'primevue-designer/src/assets/custom/mixins-functions.scss'; @import "~/assets/scss/global.scss";`,
+                    additionalData: `@charset "UTF-8"; @use 'sass:map'; @use 'sass:math'; @use 'sass:string'; @import 'primevue-designer/src/assets/themes/${theme}/breakpoints.scss'; @import 'primevue-designer/src/assets/custom/include-media.scss'; @import 'primevue-designer/src/assets/custom/mixins-functions.scss'; @import "~/assets/scss/global.scss";`,
                 },
             },
         },

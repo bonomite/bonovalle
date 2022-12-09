@@ -45,7 +45,6 @@ const isBtnDisabled = computed(() => {
   <div>
     <div class="home">
       <h1>Home</h1>
-      <p>Home</p>
       <div v-if="dataState" v-for="row in dataState">
         <p>id: {{ row.id }}</p>
         <p>name: {{ row.name }}</p>
