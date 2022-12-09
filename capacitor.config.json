@@ -1,0 +1,6 @@
+{
+  "appId": "com.bonovalle.app",
+  "appName": "bonovalle",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}

@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">bonovalle</string>
+    <string name="title_activity_main">bonovalle</string>
+    <string name="package_name">com.bonovalle.app</string>
+    <string name="custom_url_scheme">com.bonovalle.app</string>
+</resources>
