@@ -1,12 +1,8 @@
 <script setup lang="ts">
 import { useCurrentData } from '~/composables/states'
 import type { RealtimeChannel } from '@supabase/supabase-js'
-const props = defineProps({
-  //   propVar: {
-  //     type: Boolean,
-  //     default: false,
-  //   },
-})
+import consolaGlobalInstance from 'consola'
+
 let realtimeChannel: RealtimeChannel
 const client = useSupabaseClient()
 const dataState = useCurrentData()
@@ -18,7 +14,7 @@ const { data: rows, refresh: refreshRows } = await useAsyncData(
     return await client.from('test-table').select('id, powered, name')
   }
 )
-
+console.log('rows.value.data = ', rows.value.data)
 //initial set to global state
 dataState.value = rows.value.data
 
