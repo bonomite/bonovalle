@@ -44,3 +44,7 @@ a {
 .shadow {
     text-shadow: 2px 2px 4px #000000;
 }
+// for some reason, the font gets stripped of the quotes... and this font needs quotes to work. so I am adding them backin here.
+* {
+    font-family: 'Exo 2';
+}
