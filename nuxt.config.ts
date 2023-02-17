@@ -21,7 +21,8 @@ export default defineNuxtConfig({
         },
 
     },
-    modules: ['@nuxtjs/supabase', '@nuxtjs/ionic'],
+    ssr: false,
+    modules: ['@nuxtjs/supabase'],
     build: {
         transpile: [
             'primevue'

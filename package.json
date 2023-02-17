@@ -1,11 +1,15 @@
 {
+  "name": "bonovalle",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "build": "nuxt build",
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "ionic:build": "npm run build",
+    "ionic:serve": "npm run dev"
   },
   "devDependencies": {
     "@capacitor/cli": "4.6.1",
@@ -18,8 +22,10 @@
     "@capacitor/app": "4.1.1",
     "@capacitor/core": "4.6.1",
     "@capacitor/haptics": "4.1.0",
+    "@capacitor/ios": "4.6.1",
     "@capacitor/keyboard": "4.1.0",
     "@capacitor/status-bar": "4.1.1",
+    "@splinetool/runtime": "^0.9.217",
     "gsap": "^3.11.3",
     "primeicons": "^6.0.1",
     "primevue": "^3.20.0",

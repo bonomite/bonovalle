@@ -39,11 +39,18 @@
 // const isBtnDisabled = computed(() => {
 //   return selectedUser.value && newName.value
 // })
+import { Application } from '@splinetool/runtime'
+onMounted(() => {
+  const canvas = document.getElementById('canvas3d')
+  const app = new Application(canvas)
+  app.load('https://prod.spline.design/2iFmKQSbm7yQ3bDL/scene.splinecode')
+})
 </script>
 
 <template>
   <ion-app>
     hello
+    <canvas id="canvas3d" width="800" height="600"></canvas>
     <ion-router-outlet />
     <!-- <div>
       <div class="home">
