@@ -50,7 +50,7 @@ onMounted(() => {
 <template>
   <ion-app>
     hello
-    <canvas id="canvas3d" width="800" height="600"></canvas>
+    <canvas id="canvas3d" width="400" height="300"></canvas>
     <ion-router-outlet />
     <!-- <div>
       <div class="home">
@@ -85,6 +85,12 @@ onMounted(() => {
 </template>
 
 <style lang="scss">
+#canvas3d {
+  width: 100% !important;
+  height: auto !important;
+  max-width: 800px !important;
+  aspect-ratio: 4/3;
+}
 .home {
   .form {
     //background-color: var(--primary-color-lighter);
